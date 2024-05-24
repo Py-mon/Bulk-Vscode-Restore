@@ -15,13 +15,13 @@ It saves a bunch of saves for every file you had. You can right-click on point a
 
 ![image](https://github.com/PythonDominator/Bulk-Vscode-Restore/assets/102424561/0507c034-c40b-4a5b-821f-ce533c906989)
 
-## Problem
+## Problem with Local History
 If you deleted a file you will have to put the file back with the right path and name in order to restore it. If you deleted hundreds of files this can be very tedious. Bulk-Vscode-Restore can recreate the right file path, name, and restore the latest save for hundreds of files instantly.
 
 # Usage
 1. Copy the code from `restore.py`
 2. Naviagate the parent folder of where you put `restore.py` in
-3. Find where local history is stored (For Windows it is `C:\Users\[YOUR_USERNAME_HERE]\AppData\Roaming\Code\User\History`)
+3. Find where local history is stored (For Windows it is usually `C:\Users\[YOUR_USERNAME_HERE]\AppData\Roaming\Code\User\History`)
 4. Run:
 ```
 python restore.py [restore_from] [history] [restore_to]
