@@ -11,7 +11,7 @@ You can find it at the bottom left in the timeline.
 You can also find it by pressing `CTRL+SHIFT+P` and then typing `Explorer: Focus on Timeline View`
 ![image](https://github.com/PythonDominator/Bulk-Vscode-Restore/assets/102424561/2928731c-922f-4942-8ef3-077094e62a66)
 
-It saves a bunch of saves for every file you had. You can right-click on point and restore it.
+It stores a a bunch of the last saves for each file you ever had. You can right-click on point and restore it.
 
 ![image](https://github.com/PythonDominator/Bulk-Vscode-Restore/assets/102424561/0507c034-c40b-4a5b-821f-ce533c906989)
 
@@ -19,7 +19,7 @@ It saves a bunch of saves for every file you had. You can right-click on point a
 If you deleted a file you will have to put the file back with the right path and name in order to restore it. If you deleted hundreds of files this can be very tedious. Bulk-Vscode-Restore can recreate the right file path, name, and restore the latest save for hundreds of files instantly.
 
 # Usage
-1. Copy the code from `restore.py`
+1. Copy the code from `restore.py` or clone the repository using `git clone https://github.com/PythonDominator/Bulk-Vscode-Restore`
 2. Naviagate the parent folder of where you put `restore.py` in
 3. Find where local history is stored (For Windows it is usually `C:\Users\[YOUR_USERNAME_HERE]\AppData\Roaming\Code\User\History`)
 4. Run:
