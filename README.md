@@ -1,4 +1,4 @@
-Bulk-Vscode-Restore restores lost files in vscode by recreating the right file path, name, and restoring the latest save through vscodes's local history.
+Quickly restores numerous lost or deleted files in vscode by recreating the right file path, name, and restoring it through vscodes's local history.
 
 ## Local History
 
