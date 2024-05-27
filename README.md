@@ -31,3 +31,5 @@ python restore.py [restore_from] [history] [restore_to]
 ```
 python restore.py C:\Users\Joe\Downloads\Programming\MyLostProject C:\Users\Joe\AppData\Roaming\Code\User\History C:\Users\Joe\OneDrive\Documents\RestoredProject
 ```
+
+Please let me know if you have any questions or if I helped you restore any files.
