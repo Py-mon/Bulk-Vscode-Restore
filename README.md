@@ -26,7 +26,22 @@ If you deleted a file you will have to put the file back with the right path and
 ```
 python restore.py [restore_from] [history] [restore_to]
 ```
-   
+```
+usage: restore.py [-h] [--no-entries] [--no-date] restore_from history restore_to
+
+Easily bulk restore files in vscode.
+
+positional arguments:
+  restore_from  The folder that gets restored.
+  history       The vscode folder where local history is stored. Changes depending on OS but    
+                for windows usually C:\Users\{USER_NAME}\AppData\Roaming\Code\User\History      
+  restore_to    Where folder gets restored.
+
+options:
+  -h, --help    show this help message and exit
+  --no-entries  Doesn't show the amount of entries in files.
+  --no-date     Doesn't show the date of the last save.
+```
 ## Example:
 ```
 python restore.py C:\Users\Joe\Downloads\Programming\MyLostProject C:\Users\Joe\AppData\Roaming\Code\User\History C:\Users\Joe\OneDrive\Documents\RestoredProject
