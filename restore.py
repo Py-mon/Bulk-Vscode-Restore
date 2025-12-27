@@ -38,15 +38,15 @@ history = pathlib.Path(args.history)
 restore_from = pathlib.Path(args.restore_from)
 restore_to = pathlib.Path(args.restore_to)
 
-
 def convert_timestamp(timestamp):
     return datetime.datetime.fromtimestamp(int(timestamp) / 1000)
 
 
-max_entries = 0
+max_entries = 999999
 all_history_data = []
 for file_history_folder in history.glob("*"):
     json_file = file_history_folder / "entries.json"
+    # print('Processing file ', json_file)
 
     if not json_file.exists():
         continue
@@ -57,11 +57,15 @@ for file_history_folder in history.glob("*"):
         max_entries = entries
 
     all_history_data.append((file_history_folder, data))
+    # print('all_history_data: ', all_history_data)
 
 for file_history_folder, data in all_history_data:
-    path = pathlib.Path("C:\\") / pathlib.Path(
+    path = pathlib.Path(str(restore_from.drive) + "\\") / pathlib.Path(
         *pathlib.Path(data["resource"]).parts[2:]
     )
+
+    #print('path: ', path)
+    #exit(1)
 
     put_in = restore_to.joinpath(*path.parts[1:])
 
